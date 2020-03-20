@@ -1,0 +1,43 @@
+{
+  "name": "andresdotsh",
+  "version": "1.6.0",
+  "description": "Personal npx card",
+  "main": "/bin/card.js",
+  "bin": {
+    "andresdotsh": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andresdotsh/bitandbang.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1",
+    "ramda-adjunct": "^2.21.0"
+  }
+}
